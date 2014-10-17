@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" version="3.2" folio="1" fecha="2014-10-14T11:57:00" formaDePago="Pago en una sola exhibicion" subTotal="100" Moneda="MXN" total="116" tipoDeComprobante="ingreso" metodoDePago="Efectivo" LugarExpedicion="MEXICO">
+  <cfdi:Emisor rfc="AAA010101AAA" nombre="PRUEBAS INTEGRACION S.A. DE C.V.">
+    <cfdi:DomicilioFiscal calle="CALLE EMISOR" noExterior="1" colonia="COL. EMISOR" localidad="MEXICO" municipio="MUN. EMISOR" estado="MEXICO" pais="MEXICO" codigoPostal="53125" />
+    <cfdi:RegimenFiscal Regimen="REGIMEN GENERAL" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="BBB010101BBB" nombre="CLIENTE PRUEBA S.A. DE C.V.">
+    <cfdi:Domicilio calle="CALLE RECEPTOR" noExterior="1" noInterior="B" colonia="COL. RECEPTOR" municipio="MUN. RECEPTOR" estado="MEXICO" pais="MEXICO" codigoPostal="53100" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1" unidad="PZA" noIdentificacion="00001" descripcion="PRUEBA INTEGRACION" valorUnitario="100" importe="100" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="16">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="16.0" importe="16" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>
