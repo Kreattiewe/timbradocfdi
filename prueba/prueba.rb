@@ -17,12 +17,12 @@ def self.timbraCFDI
   puts @timbrado.timbraCFDI(comprobante, 1)
 end
 
-def self.obtienecfdi 
+def self.obtieneCFDI 
   folioUUID = "E231C693-8871-4CEB-ADD4-DCCBE0BE5FDA"
   puts @timbrado.obtieneCFDI(@rfcEmisor, folioUUID)
 end
 
-def self.cancelacfdi
+def self.cancelaCFDI
   folioUUID = "E231C693-8871-4CEB-ADD4-DCCBE0BE5FDA"
   puts @timbrado.cancelaCFDI(@rfcEmisor, folioUUID)
 end
@@ -34,13 +34,13 @@ self.registroEmisor
 puts "------------------------------------\n\n"
 
 puts "Timbrando CFDI"
-self.timbracfdi 
+self.timbraCFDI 
 puts "------------------------------------\n\n"
 
 puts "Obteniendo CFDI"
-self.obtienecfdi 
+self.obtieneCFDI 
 puts "------------------------------------\n\n"
 
 puts "Cancelando CFDI"
-self.cancelacfdi 
+self.cancelaCFDI 
 puts "------------------------------------\n\n"
